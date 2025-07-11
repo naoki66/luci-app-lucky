@@ -1,7 +1,9 @@
 name: Auto Release Lucky
 
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - 'dist/**'
 
 jobs:
   release:
